@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Cartify</title>
+</head>
+
+<body>
+    <div class="animationSvg">
+        <img src="Images/SVGs/Bg-animation.svg" alt="Loading Error" class="animationSvg">
+    </div>
+    <div class="container">
+        <div class="shoppingSvg">
+            <img src="Images/SVGs/cart-shopping.svg" alt="Loading Error" class="shoppingImgSvg">
+        </div>
+        <div class="loginContainer">
+            <form id="forForms" action="../Dashboard-2/test.html" onsubmit="return toDashboard()">
+                <img src="Images/SVGs/profile-pic.svg" alt="Profile picture not loaded" class="profilePicSvg">
+                <h2>Welcome to Cartify...</h2>
+                <p>Get access to flash sale near you</p>
+                <div class="userInput">
+                    <div class="forEmail">
+                        <input type="email" class="input" placeholder="Enter your Email here" id="emailInput"
+                            autocomplete="off" required>
+                    </div>
+                    <div class="forPassword">
+                        <input type="password" class="input" placeholder="Enter your Password here" id="passwordInput"
+                            autocomplete="off" required>
+                    </div>
+                    <div class="loginValidate">
+                        <p id="loginSuccessfull">---Login Successfull---</p>
+                        <p id="loginFailed">-----Login Failed-----</p>
+                    </div>
+                    <input type="submit" value="Login" class="btn" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js" type="text/javascript"></script>
+</body>
+
+</html>
