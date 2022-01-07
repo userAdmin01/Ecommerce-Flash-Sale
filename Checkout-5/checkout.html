@@ -1,0 +1,218 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="checkout.css">
+  </head>
+  <body class="body" style="min-height: 800px; width: 100%;" >
+   <nav class="navbar123">
+      <div class="nav">
+          <img src="images/Shopify-Logo.png" class="brandLogo" alt="Brand Logo">
+          <div class="navItems">
+              <a class="home" href="home">Home</a>
+              <a class="productList" href="productList">product list</a>
+              <a class="logout" href="logout">logout</a>
+              <a class="cart" href="cart"><img src="images/cart.png" alt="cart"></a>
+              
+          </div>
+      </div>
+  
+  </nav> 
+
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-sucess">
+  <div class="nav">
+  <a class="navbar-brand" href="#"> <img src="/frontend/image/Shopify-Logo.png" class="brandLogo" alt="Brand Logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="navbar-nav mr-auto"></div>
+      <a class="nav-item nav-link" href="home">Home</a>
+       <a class=" nav-item nav-link " href="productList">product list</a>
+       <a class=" nav-item nav-link " href="logout">logout</a>
+    </div>
+       <a class="nav-link" href="#"><img src="" alt="cart"></a>
+              
+    
+  </div>
+
+
+  
+</nav>-->
+
+
+<div class="row" style="width: 100%;">
+      <div class="col-4">
+       <img src="/frontend/image/cartlogo.png" height="200" width="200"class="cartImg"
+      alt="Cart logo" style="justify-content: right;" >
+    </div >
+     <div class="col-md-8">
+       <span> <h1 class="mb-2" id="fill">Fill in the details for checkout!!!</h1></span>
+      </div>
+      <div class="Container" >
+
+        
+        
+      
+           <div class="row">
+          <div class="col-md-4 order-md-2 mb-4 ">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Summary</span>
+              
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Cart price</h6>
+                  
+                </div>
+                <span class="text-muted">3000</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0"> Discount</h6>
+                 
+                </div>
+                <span class="text-muted">-400</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-condensed">
+                <div>
+                  <h6 class="my-0">Shipping</h6>
+                  
+                </div>
+                <span class="text-muted">100</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="my-0">
+                  <h6 class="my-0">Coupon code</h6>
+                  
+                </div>
+                <span class="my-0">-200</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total</span>
+                <strong>2500</strong>
+              </li>
+            </ul>
+      
+            <form class="card p-3">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Coupon code">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-secondary">Redeem</button>
+                </div>
+              </div>
+            </form>
+          </div>
+         
+
+
+
+        
+       
+
+
+
+
+      <div class="col-md-8 order-md-1">
+        <!--<h1 class="mb-2" id="fill">Fill in the details for checkout!!!</h1>-->
+   
+        <form action="#" method="post" novalidate class="form" >
+          <div class="row g-3 d-flex justify.content.between ">
+            <div class="clo">
+              <label for="shippingName" class="form-label">Name</label>
+                  
+              <input type="text" name="shippingName" id="shippingName" placeholder="Full name" class="form-control">
+              <div class="invalid-feedback">Enter your name</div>
+            </div>
+            <div class="col">
+              <label for="shippingEmail" class="form-lable">Email</label><br>
+              <input type="email" name="shippingEmail" id="shippingEmail" placeholder="your_email@gmail.com" class="form-control">
+            </div>
+            <div class="clo">        
+             <label for="shippingPhone" class="form-lable">Mobile </label>
+             <input type="text" name="shippingPhone" id="shippingPhone" placeholder="Phone number" class="form-control">
+            </div> 
+            <div class="col">
+              
+              <label for="shippingAddress" class="form-lable">Shipping Address</label>
+              <textarea name="shippingAddress" id="shippingAddress"  placeholder="Enter Address" class="form-control"></textarea>
+            
+            </div>
+          </div>
+   
+            <div class="col">
+                <label for="paymentType" class="form-label">Payment type</label>
+                <select onchange="onlinecheck(this);" type="paymentType" id="paymentType" class="form-control">
+                  <option value="">**Select payment type**</option>
+                  <option value="COD">Cash on Delivery</option>
+                  <option value="onlinePay">Online Payment</option>
+                </select>
+            
+            <hr class="my-4">
+      
+          </div>
+          <div  id="ifyes" style="display: none;">
+            <form >
+              <div class="row">
+                <div class="col-4">
+                <label for="creditCard" >Credit Card</label>
+                <input type="radio" id="creditCard" name="cardType" value="creditCard">
+              </div>
+              <div class="col-3">
+                <label for="creditCard" >Debit Card</label>
+                <input type="radio" id="debitCard" name="cardType" value="debitCard">
+              </div>
+              </div>
+              <br>
+                <br>
+              
+                <div class="col-3">
+                  <label for="cardNo" class="form-lable">Card number</label>
+                  <input type="number" id="cardNo" name="cardNo" maxlength="12" class="form-control">
+                </div>
+              
+                <div class="col-4">
+                  <label for="cardName" class="form-lable">Card Holders Name</label>
+                  <input type="text" id="cardNmae" name="cardName" class="form-control">
+                </div>
+                <div class="row" >
+                <div class="col-4">
+                  <label for="cardDate" class="form-lable">Expiry Date</label>
+                  <input type="month" id="cardDate" name="cardDate" class="form-control">
+                </div>
+                <div class="col-2">
+                  <label for="caredCvv" class="form-lable">CVV</label>
+                  <input type="password" id="cardCvv" name="cardCvv" maxlength="3" class="form-control">
+                </div>
+
+              </div>
+           
+
+          </form>
+
+          </div>
+          <button type="submit" name="checkoutButton" id="checkoutButton" class="btn btn-primary btn-lg btn-block col-12"> Place order</button>
+   
+        </form>
+    
+    </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="checkout.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
