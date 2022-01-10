@@ -1,0 +1,67 @@
+body {
+  background-size: cover;
+
+  box-sizing: border-box;
+}
+#fill {
+  font-family: "Bangers", cursive;
+  color: #ffae42;
+  font-size: 8vh;
+  margin-top: 20vh;
+  align-content: right;
+}
+.col-md-8 {
+  margin-right: 0;
+}
+.cartImg {
+  margin-left: 30%;
+  padding-right: 1px;
+  margin-right: 10px;
+  position: relative;
+  left: 160;
+}
+
+.Container {
+  padding-left: 100px;
+  box-sizing: border-box;
+  padding-right: 100px;
+}
+.navbar123 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: block;
+
+  background: rgba(211, 211, 211, 0.4);
+  z-index: 9;
+}
+
+.nav {
+  padding: 10px 10vw;
+  background-size: contain;
+  justify-content: space-between;
+}
+
+.brandLogo {
+  height: 60px;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+}
+
+.navItems a {
+  margin-left: 25px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navItems a:hover {
+  opacity: 0.5;
+}
+
+.navItems a img {
+  width: 30px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signUp.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="animationSvg">
+        <img src="Images/SVGs/Bg-animation.svg" alt="Loading Error" class="animationSvg">
+    </div>
+    <div class="mainContainer">
+    <h2>Create new Account to be the part of Cartify</h2>
+    
+        <div class="topContainer">
+            <div class="imageContainer">
+                <img src="Images/SVGs/signUp.svg" alt="Not loaded" id="signUpImg">
+            </div>
+            <form action="login.html">
+                <div class="container">
+                    <!-- <h1>Register to be the part of Cartify</h1> -->
+                    <p id="firstP">Please fill in this form with the details.</p>
+                    <hr>
+                    <input type="text" placeholder="Enter your First Name" name="firstName" id="firstName" required
+                         autocomplete="off">
+
+                    <input type="text" placeholder="Enter your Last Name" name="lastName" id="lastName" required
+                         autocomplete="off">
+
+                    <input type="email" placeholder="Enter your Email here" name="emailId" id="emailId" required autofocus="off" autocomplete="off">
+
+                    <input type="password" placeholder="Enter your Password here" name="password" id="password" required
+                        autocomplete="off">
+
+                    <input type="text" placeholder="Enter your location" name="address" id="address" required autofocus="off" autocomplete="off">
+
+                    <input type="tel" placeholder="Enter your Phone number" name="phone" id="phone" required autofocus="off"
+                        pattern="[0-9]{10}" autocomplete="off">
+
+
+                    <hr>
+
+
+                </div>
+        </div>
+        <div class="bottomContainer">
+            <p id="secondP">By creating an account you agree to our &nbsp;<a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn btn">Register</button>
+            <p id="thirdP">Already have an account?<a href="#">Sign in</a>.</p>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>

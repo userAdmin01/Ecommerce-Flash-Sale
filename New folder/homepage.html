@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="homepage.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav">
+      <img src="images/logo.png" class="brandLogo" alt="Brand Logo">
+      <div class="navItems">
+        <a class="home" href="home">Home</a>
+        <a class="productList" href="productList">All products</a>
+        <a class="logout" href="logout">logout</a>
+        <a></a>
+        <div class="cart">
+          <form>
+            <button type="button" id="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+
+              <span id="cart-count-info"></span>
+            </button>
+          </form>
+
+          <div class="cart-container">
+            <div class="cart-list">
+              <!-- single item -->
+              <!--     <div class = "cart-item" id="cart-item">
+                  <img src = "/frontend/images/product1.jpg" alt = "product image">
+                  <div class = "cart-item-info">
+                    <h3 class = "cart-item-name">Arm Chair</h3>
+                    <span class = "cart-item-category">Chair</span>
+                    <span class = "cart-item-price">$120.00</span>
+                  </div>
+
+                  <button onclick="cartopen()" type = "button" class = "cart-item-del-btn">
+                    <i class = "fas fa-times"></i>
+                  </button>
+                </div>       -->
+              <!-- end of single item  -->
+            </div>
+
+            <div class="cart-total" style="background-color: black">
+              <h3>Total: </h3>
+              <span id="cart-total-value" class="cart-total-value"></span>
+            </div>
+            <div class="cartCheckout">
+
+              <a href="checkout.html">
+                <button type="button" class="btn btn-primary">Checkout
+                </button>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </nav>
+  <!-- hero section -->
+  <header class="heroSection">
+    <div class="content">
+      <!-- <img src="images/Shopify-Logo.png" class="logo" alt="logoImage"> -->
+      <p class="subHeading">flash sale</p>
+      <div class="countdown"></div>
+    </div>
+  </header>
+
+  <section class="product">
+    <h2 class="deals">Deals of the Day</h2>
+
+    <div class="productContainer ">
+
+
+
+
+      <!-----------------------------------
+            
+
+
+            -------------------------->
+
+
+    </div>
+  </section>
+
+
+  <script src="https://kit.fontawesome.com/575d682eec.js" crossorigin="anonymous"></script>
+  <script src="timer.js"></script>
+
+</body>
+
+</html>

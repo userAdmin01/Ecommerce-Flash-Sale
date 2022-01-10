@@ -140,3 +140,8 @@ a{
     background: linear-gradient(rgb(64, 89, 114), rgb(105, 166, 228));
     box-shadow: 7px 7px 12px #8cabb9;
 }
+
+.buttonSection{
+    width: 20rem;
+    display: flex;
+}

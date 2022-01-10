@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(80, 43, 43); */
+}
+  
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+  }
+  *:focus {
+    outline: none;
+}
+  .animationSvg{
+    position: fixed;
+    height: 100%;
+    left: -60px;
+    bottom: 0;
+    z-index: -1;
+}
+  .mainContainer{
+      width: 100vw;
+      height: 100vh;
+    margin: auto;
+    /* width: 50%; */
+    /* border: 3px solid green; */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .topContainer{
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 2%;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .bottomContainer{
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+    text-align: center;
+  }
+#signUpImg{
+    width: 40rem;
+  }
+  a{
+      text-decoration: none;
+  }
+  #firstP{
+      text-align: center;
+      font-size: 1.2rem;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+
+  }
+  .container:hover{
+  background: rgba(255, 255, 255, 0.116);
+  box-shadow:  10px 10px 50px #d3e4e9,
+  -10px -10px 50px rgba(240, 240, 240, 0.185);
+  transition: ease-in 0.5s;
+  }
+  h2{
+      color: tomato;
+      padding: 1.2rem;
+      margin-top: 1.1rem;
+      text-align: start;
+      font-size: 1.8rem;
+  }
+  /* Full-width input fields */
+  input[type=text], input[type=password], input[type=email], input[type=tel] {
+    width: 75%;
+    padding: 12px;
+    margin: 5px auto 10px auto;
+    display: inline-block;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 15px;
+
+  }
+  
+  input[type=text]:focus, input[type=password]:focus , input[type=email]:focus, input[type=tel]:focus{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: none;
+    margin-bottom: 30px;
+  }
+/* rgba(255, 255, 255, 0) */
+
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+  }
+
+  input[type=text]::placeholder, input[type=password]::placeholder, input[type=tel]::placeholder, input[type="email"]::placeholder { 
+    font-size: 15px;
+    text-align: center;
+    color: rgba(133, 131, 131, 0.568);
+    
+}
+input[type=text]:hover, input[type=password]:hover, input[type=tel]:hover, input[type="email"]:hover { 
+    border-bottom: 2px solid black;
+}
+
+.btn {
+    margin: 7px;
+    font-size:15px;
+    font-family:Arial;
+    width:80px;
+    height:30px;
+    color:#fff;
+    border-color:rgba(86, 161, 236, 0.7);
+    border-style: none;
+    border-radius: 12px;
+    box-shadow: 5px 5px 12px #666666;
+    background:linear-gradient(rgb(105, 166, 228), rgb(64, 89, 114));
+}
+  
+
+.btn:hover {
+    font-weight:550;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(rgb(64, 89, 114), rgb(105, 166, 228));
+    box-shadow: 7px 7px 12px #8cabb9;
+}
+a:hover{
+    font-size: 1.1rem;
+    color: rgb(0, 38, 255);
+    text-shadow: 1px 1px 10px rgb(114, 113, 113);
+}
